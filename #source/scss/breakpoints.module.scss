@@ -1,16 +1,28 @@
+$xxlBreakpoint: 1650px;
 $xlBreakpoint: 1440px;
 $lgBreakpoint: 1290px;
 $mdBreakpoint: 1024px;
 $smBreakpoint: 768px;
 $xsBreakpoint: 480px;
 
-@mixin xs-breakpoint {
+@mixin xxl_plus-breakpoint {
+  @media only screen and (min-width: $xxlBreakpoint){
+    @content
+  }
+};
+@mixin xxl-breakpoint {
+  @media only screen and (max-width: $xxlBreakpoint){
+    @content
+  }
+};
+
+@mixin xl-breakpoint {
   @media only screen and (max-width: $xlBreakpoint){
     @content
   }
 };
 
-@mixin sm-breakpoint {
+@mixin lg-breakpoint {
   @media only screen and (max-width: $lgBreakpoint){
     @content
   }
@@ -22,13 +34,13 @@ $xsBreakpoint: 480px;
   }
 };
   
-@mixin lg-breakpoint {
+@mixin sm-breakpoint {
   @media only screen and (max-width: $smBreakpoint){
     @content
   }
 };
   
-@mixin xl-breakpoint {
+@mixin xs-breakpoint {
   @media only screen and (max-width: $xsBreakpoint){
     @content
   }

@@ -2,8 +2,11 @@
 <html lang="ru">
 	<head>
 		<title>figma-layout (SCSS)</title>
-		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+		<!-- Адаптив -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+		<!-- <meta name="viewport" content="width=device-width"/> -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
@@ -21,6 +24,10 @@
 							<div class="reviews">Отзывы</div>
 							<div class="question_answer">Вопрос - ответ</div>
 							<div class="contacts">Контакты</div>
+						</div>
+						<div class="mobile_menu">
+							<div class="menu_icon"><img src="img/header/menu_icon.png" alt=""></div>
+							<div class="logo"><img src="img/header/logo.png" alt=""></div>
 						</div>
 					</div>
 					<div class="second_line">
@@ -57,29 +64,37 @@
 					<div class="goods">
 						<div class="goods_title">Специальные предложения</div>
 						<div class="goods_row">
-							<div class="good_1">
+							<div class="good good_1">
 								<div class="good_img"><img src="img/main_bgs/chair.png" alt=""></div>
 								<div class="good_descrition">Парикмахерское кресло «Норм» гидравлическое</div>
 								<div class="good_price">9 900 ₽</div>
-								<button class="good_button">Купить</button>
+								<div class="good_button">
+									<button class="good_button">Купить</button>
+								</div>
 							</div>
-							<div class="good_2">
+							<div class="good good_2">
 								<div class="good_img"><img src="img/main_bgs/chair.png" alt=""></div>
 								<div class="good_descrition">Парикмахерское кресло «Норм» гидравлическое</div>
 								<div class="good_price">9 900 ₽</div>
-								<button class="good_button">Купить</button>
+								<div class="good_button">
+									<button class="good_button">Купить</button>
+								</div>
 							</div>
-							<div class="good_3">
+							<div class="good good_3">
 								<div class="good_img"><img src="img/main_bgs/chair.png" alt=""></div>
 								<div class="good_descrition">Парикмахерское кресло «Норм» гидравлическое</div>
 								<div class="good_price">9 900 ₽</div>
-								<button class="good_button">Купить</button>
+								<div class="good_button">
+									<button class="good_button">Купить</button>
+								</div>
 							</div>
-							<div class="good_4">
+							<div class="good good_4">
 								<div class="good_img"><img src="img/main_bgs/chair.png" alt=""></div>
 								<div class="good_descrition">Парикмахерское кресло «Норм» гидравлическое</div>
 								<div class="good_price">9 900 ₽</div>
-								<button class="good_button">Купить</button>
+								<div class="good_button">
+									<button class="good_button">Купить</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -91,11 +106,17 @@
 									10 000 рублей для наших клиентов</div>
 								<input type="text" class="subscribe_input" placeholder="Введите e-mail">
 							</div>
+							<div class="shops_1">
+								<div class="shops_title">Заходите к нам</div>
+								<div class="shops_text">Более 300 магазинов
+									по всей России</div>
+								<button class="shops_button">Карта магазинов</button>
+							</div>
 							<div class="subscribe_column_2">
 								<div class="envelope"><img src="img/main_bgs/envelope.png" alt=""></div>
 							</div>
 						</div>
-						<div class="shops">
+						<div class="shops_2">
 							<div class="shops_title">Заходите к нам</div>
 							<div class="shops_text">Более 300 магазинов
 								по всей России</div>
@@ -104,24 +125,36 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- FOOTER -->
-		<div class="footer">
-			<div class="line_2"><img src="img/header/Line.png" alt=""></div>
-			<div class="footer_line_1">
-				<div class="footer_menu">
-					<div class="youtube"><img src="img/footer/youtube_logo.png" alt=""></div>
-					<div class="vk"><img src="img/footer/vk_logo.png" alt=""></div>
-					<div class="facebook"><img src="img/footer/facebook_logo.png" alt=""></div>
-					<div class="instagram"><img src="img/footer/instagram_logo.png" alt=""></div>
-					<div class="address">198555, Невский пр. 140, офис 140</div>
-					<div class="phone_2">8 (812) 123-45-67</div>
-					<button class="footer_button">Обратный звонок</button>
+			<!-- FOOTER -->
+			<div class="footer">
+				<div class="line_2"><img src="img/header/Line.png" alt=""></div>
+				<div class="footer_line_1">
+					<div class="footer_menu_1">
+						<div class="youtube"><img src="img/footer/youtube_logo.png" alt=""></div>
+						<div class="vk"><img src="img/footer/vk_logo.png" alt=""></div>
+						<div class="facebook"><img src="img/footer/facebook_logo.png" alt=""></div>
+						<div class="instagram"><img src="img/footer/instagram_logo.png" alt=""></div>
+						<div class="address">198555, Невский пр. 140, офис 140</div>
+						<div class="phone_2">8 (812) 123-45-67</div>
+						<button class="footer_button">Обратный звонок</button>
+					</div>
 				</div>
-			</div>
-			<div class="footer_line_2">
-				<div class="footer_about">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты</div>
-				<div class="footer_poliсy">Политика конфиденциальности</div>
+				<div class="footer_line_1_1">
+					<div class="address">198555, Невский пр. 140, офис 140</div>
+				</div>
+				<div class="footer_line_2">
+					<div class="footer_menu_2">
+						<div class="phone_2">8 (812) 123-45-67</div>
+						<button class="footer_button">Обратный звонок</button>
+					</div>
+				</div>
+				<div class="footer_line_2_1">
+					<button class="footer_button_1">Обратный звонок</button>
+				</div>
+				<div class="footer_line_3">
+					<div class="footer_about">Лучший магазин (с) 2019 Все права защищены. Интернет-магазин оборудования для салонов красоты</div>
+					<div class="footer_poliсy">Политика конфиденциальности</div>
+				</div>
 			</div>
 		</div>
 	</body>	
