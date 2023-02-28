@@ -557,11 +557,6 @@ button {
     justify-content: space-around;
   }
 }
-@media only screen and (max-width: 560px) {
-  .main_bgs .main_bgs_row .subscribe {
-    margin: auto;
-  }
-}
 .main_bgs .main_bgs_row .subscribe .subscribe_column_1 {
   margin-top: 35px;
   margin-left: 40px;
@@ -576,6 +571,12 @@ button {
 @media only screen and (max-width: 768px) {
   .main_bgs .main_bgs_row .subscribe .subscribe_column_1 {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .main_bgs .main_bgs_row .subscribe .subscribe_column_1 {
+    width: auto;
+    margin: auto;
   }
 }
 .main_bgs .main_bgs_row .subscribe .subscribe_column_1 .subscribe_title {
@@ -611,14 +612,14 @@ button {
   justify-content: center;
   margin: auto;
 }
+@media only screen and (max-width: 560px) {
+  .main_bgs .main_bgs_row .subscribe .subscribe_column_2 {
+    display: none;
+  }
+}
 .main_bgs .main_bgs_row .subscribe .subscribe_column_2 .envelope {
   width: 140px;
   height: 140px;
-}
-@media only screen and (max-width: 560px) {
-  .main_bgs .main_bgs_row .subscribe .subscribe_column_2 .envelope {
-    display: none;
-  }
 }
 @media only screen and (min-width: 1650px) {
   .main_bgs .main_bgs_row .shops_1 {
@@ -716,6 +717,11 @@ button {
   margin: auto;
 }
 @media only screen and (max-width: 1024px) {
+  .footer {
+    height: 224px;
+  }
+}
+@media only screen and (max-width: 869px) {
   .footer {
     height: 264px;
   }
@@ -824,6 +830,7 @@ button {
   margin-left: 40px;
   background: #FFFFFF;
   border: 2px solid #66C05D;
+  color: #000000;
 }
 @media only screen and (max-width: 1024px) {
   .footer .footer_line_1 .footer_menu_1 .footer_button {
@@ -920,6 +927,7 @@ button {
     margin-left: 40px;
     background: #FFFFFF;
     border: 2px solid #66C05D;
+    color: #000000;
   }
 }
 @media only screen and (max-width: 1024px) and (max-width: 768px) {
@@ -984,7 +992,7 @@ button {
   color: #828282;
   flex-wrap: wrap;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 869px) {
   .footer .footer_line_3 {
     height: 104px;
     font-weight: 700;

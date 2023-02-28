@@ -28,7 +28,6 @@ button {
 	height: 40px;
 	border-radius: 40px;
 	text-align: center;
-	// -webkit-appearance: none;
 }
 
 // HEADER
@@ -426,9 +425,6 @@ button {
 				width: 100%;
 				justify-content: space-around;
 			}
-			@media only screen and (max-width: 560px) {
-				margin: auto;
-			}
 			.subscribe_column_1 {
 				margin-top: 35px;
 				margin-left: 40px;
@@ -439,6 +435,10 @@ button {
 				}
 				@include sm-breakpoint {
 					width: 50%;
+				}
+				@media only screen and (max-width: 560px) {
+					width: auto;
+					margin: auto;
 				}
 				.subscribe_title {
 					width: 250px;
@@ -469,12 +469,12 @@ button {
 				align-items: center;
 				justify-content: center;
 				margin: auto;
+				@media only screen  and (max-width: 560px) {
+					display: none;
+				}
 				.envelope {
 					width: 140px;
 					height: 140px;
-					@media only screen and (max-width: 560px) {
-						display: none;
-					}
 				}
 			}
 		}
@@ -567,6 +567,9 @@ button {
 	background: #FFFFFF;
 	margin: auto;
 	@include md-breakpoint {
+		height: calc(184px + 40px);
+	}
+	@media only screen and (max-width: 869px) {
 		height: calc(184px + 40px + 40px);
 	}
 	@include sm-breakpoint {
@@ -657,6 +660,7 @@ button {
 				margin-left: 40px;
 				background: #FFFFFF;
 				border: 2px solid #66C05D;
+				color: #000000;
 				@include md-breakpoint {
 					display: none;
 				}
@@ -732,6 +736,7 @@ button {
 					margin-left: 40px;
 					background: #FFFFFF;
 					border: 2px solid #66C05D;
+					color: #000000;
 					@include sm-breakpoint {
 						display: none;
 					}
@@ -783,7 +788,7 @@ button {
 		line-height: 14px;
 		color: #828282;
 		flex-wrap: wrap;
-		@include md-breakpoint {
+		@media only screen and (max-width: 869px) {
 			height: 104px;
 			font-weight: 700;
 		}
