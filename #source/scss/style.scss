@@ -28,6 +28,7 @@ button {
 	height: 40px;
 	border-radius: 40px;
 	text-align: center;
+	// -webkit-appearance: none;
 }
 
 // HEADER
@@ -250,7 +251,7 @@ button {
 	}
 	@include xs-breakpoint {
 		background-image: none;
-		background: url('/img/main_sale/black_chair.png'), #66C05D;
+		background: url('/img/main_sale/black_chair.png'), #c1e4be;
 		background-position: center 0%;
 	}
 	.group {

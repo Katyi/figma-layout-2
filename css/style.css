@@ -358,7 +358,7 @@ button {
 @media only screen and (max-width: 480px) {
   .main_sale {
     background-image: none;
-    background: url("/img/main_sale/black_chair.png"), #66C05D;
+    background: url("/img/main_sale/black_chair.png"), #c1e4be;
     background-position: center 0%;
   }
 }
